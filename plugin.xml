@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" 
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-config-alert" 
+        version="1.0.0">
+
+    <name>config-alert</name>
+
+    <description>
+        This cordova plugin alerts configuration requirements of the app and then opens the related settings, e.g. Protected Apps in Huawei devices.
+    </description>
+
+    <keywords>configuration alert</keywords>
+    <repo>https://github.com/ToniKorin/cordova-config-alert</repo>
+    <license>Apache 2.0</license>
+
+    <author>Toni Korin</author>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+
+    <!-- js -->
+    <js-module src="www/ConfigAlert.js" name="ConfigAlert">
+        <clobbers target="cordova.plugins.ConfigAlert" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="ConfigAlert" >
+                <param name="android-package"
+                       value="com.tonikorin.cordova.plugin.configalert.ConfigAlertPlugin"/>
+            </feature>
+        </config-file>
+        
+        <source-file src="src/android/ConfigAlertPlugin.java"             	target-dir="src/com/tonikorin/cordova/plugin/configalert" />
+    </platform>
+
+</plugin>

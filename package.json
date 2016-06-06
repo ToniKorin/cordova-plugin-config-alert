@@ -1,0 +1,32 @@
+{
+  "name": "cordova-plugin-config-alert",
+  "version": "1.0.0",
+  "description": "\r\n This cordova plugin alerts configuration requirements of the app and then opens the related settings, e.g. Protected Apps in Huawei devices. \r\n",
+  "cordova": {
+    "id": "cordova-plugin-config-alert",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ToniKorin/cordova-plugin-config-alert.git"
+  },
+  "keywords": [
+    "configuration",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Toni Korin",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/ToniKorin/cordova-plugin-config-alert/issues"
+  },
+  "homepage": "https://github.com/ToniKorin/cordova-plugin-config-alert"
+}
