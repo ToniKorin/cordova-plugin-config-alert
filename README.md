@@ -1,5 +1,5 @@
 # ConfigAlert plugin #
-This [Cordova][cordova] plugin alerts configuration requirements of the your __Android__ app and then opens the related settings, e.g. Protected Apps in Huawei devices. The plugin is also compatible with [PhoneGap Build][PGB].
+This [Cordova][cordova] plugin alerts configuration requirements of your __Android__ app and then opens the related settings, e.g. Protected Apps in Huawei devices. The plugin is also compatible with [PhoneGap Build][PGB].
 
 ## Supported Platforms ##
 - __Android__
