@@ -18,9 +18,10 @@ cordova.plugins.ConfigAlert.alert({
     ok: "Protected Apps",
     cancel: "Remind",
     package: "com.huawei.systemmanager",
-    class: "optimize.process.ProtectActivity",
+    class: "com.huawei.systemmanager.optimize.process.ProtectActivity",
     force: false, // force alert, ignoring user selection and value of SharedPreference
-    key: "skipAlert" // key to SharedPreference
+    key: "skipAlerts", // key to SharedPreference
+    allPowerSavers: false // alert all known power savers 
 });
 ```
 
@@ -41,7 +42,7 @@ cordova plugin add cordova-plugin-config-alert --searchpath path
 or to use the latest stable version:
 ```bash
 # ~~ stable version ~~
-cordova plugin add cordova-plugin-config-alert@1.0.0
+cordova plugin add cordova-plugin-config-alert@1.x.x
 ```
 
 To remove the plug-in, run the following command:
@@ -52,7 +53,7 @@ cordova plugin rm cordova-plugin-config-alert
 #### PhoneGap Build ####
 Add the following xml line to your config.xml:
 ```xml
-<gap:plugin platform="android" name="cordova-plugin-config-alert" version="1.0.0" source="npm"/>
+<gap:plugin platform="android" name="cordova-plugin-config-alert" version="1.x.x" source="npm"/>
 ```
 
 ## History ##
